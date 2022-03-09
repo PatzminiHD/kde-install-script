@@ -1,6 +1,6 @@
 #!/bin/bash
 echo Upgrading System...
-sudo apt upadte && sudo pkcon -y update
+sudo apt update && sudo pkcon -y update
 
 echo Installing: terminator, KeePassXC, htop, calc, gparted, neofetch, cmatrix, gimp, tty-clock, mpv, libreoffice, pv, torbrowser-launcher
 sudo apt install -y terminator keepass2 htop calc gparted neofetch cmatrix gimp tty-clock mpv libreoffice pv torbrowser-launcher
