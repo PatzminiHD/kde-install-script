@@ -1,12 +1,12 @@
 #!/bin/bash
 echo Upgrading System...
-sudo apt update && sudo pkcon -y update
+sudo apt update &>/dev/null && sudo pkcon -y update &>/dev/null
 
 echo Installing: terminator, KeePassXC, htop, calc, gparted, neofetch, cmatrix, gimp, tty-clock, mpv, libreoffice, pv, torbrowser-launcher
-sudo apt install -y terminator keepass2 htop calc gparted neofetch cmatrix gimp tty-clock mpv libreoffice pv torbrowser-launcher
+sudo apt install -y terminator keepass2 htop calc gparted neofetch cmatrix gimp tty-clock mpv libreoffice pv torbrowser-launcher &>/dev/null
 
 echo Installing: zsh, zsh-syntax-highlighting, autojump, zsh-autosuggestions
-sudo apt install -y zsh zsh-syntax-highlighting autojump zsh-autosuggestions
+sudo apt install -y zsh zsh-syntax-highlighting autojump zsh-autosuggestions &>/dev/null
 
 echo Setting up ZSH
 touch "$HOME/.cache/zshhistory"
