@@ -5,7 +5,7 @@ echo Finished!
 echo
 
 echo Installing: terminator, KeePassXC, htop, calc, gparted, neofetch, cmatrix, gimp, tty-clock, mpv, libreoffice, pv, torbrowser-launcher
-sudo apt install -y terminator keepass2 htop calc gparted neofetch cmatrix gimp tty-clock mpv libreoffice pv torbrowser-launcher &>/dev/null
+sudo apt install -y terminator keepass2 htop calc gparted neofetch cmatrix gimp tty-clock mpv libreoffice pv torbrowser-launcher
 echo Finished!
 echo
 
