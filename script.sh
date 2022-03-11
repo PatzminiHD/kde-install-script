@@ -1,6 +1,6 @@
 #!/bin/bash
 echo Upgrading System...
-sudo apt update &>/dev/null && sudo pkcon -y update &>/dev/null
+sudo apt update && sudo pkcon -y update
 echo Finished!
 echo
 
@@ -10,7 +10,7 @@ echo Finished!
 echo
 
 echo Installing: zsh, zsh-syntax-highlighting, autojump, zsh-autosuggestions
-sudo apt install -y zsh zsh-syntax-highlighting autojump zsh-autosuggestions &>/dev/null
+sudo apt install -y zsh zsh-syntax-highlighting autojump zsh-autosuggestions
 echo Finished!
 echo
 
@@ -27,5 +27,5 @@ echo
 
 echo Starting Terminator
 echo You can close this window now...
-terminator &>/dev/null &
+terminator &
 disown %1
